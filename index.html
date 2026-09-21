@@ -1,141 +1,1480 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Plan estratégico de formación PM · Brune</title>
   <style>
-    :root{--ink:#111014;--paper:#fff;--violet:#6e3f91;--violet-dark:#402452;--lilac:#d8b8e8;--pink:#df83a6;--pink-light:#f6d9e5;--blush:#fff3f7;--line:#ded5e1;--muted:#6f6872;--green:#386f5c;--amber:#9b641c;--shadow:0 18px 50px rgba(63,31,76,.12)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font:15px/1.5 "Helvetica Neue",Arial,sans-serif}a{color:var(--violet);font-weight:800;text-decoration:none}a:hover{text-decoration:underline}
-    main{max-width:1500px;margin:auto;padding:22px 28px 70px;overflow:hidden}
-    header{min-height:520px;position:relative;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr);gap:30px;align-items:end;padding:42px 34px 48px;margin-bottom:22px;background:#fff;border:1px solid #eee8ef;overflow:hidden}
-    header::before{content:"NEXT\A MOVE";white-space:pre;position:absolute;left:-1vw;top:70px;font:900 clamp(84px,13vw,205px)/.72 Arial Black,Arial,sans-serif;letter-spacing:-.085em;color:#0f0e12;z-index:0}
-    header::after{content:"BRUNE · CAREER ROADMAP";position:absolute;right:34px;top:27px;font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--pink)}
-    .hero-copy{position:relative;z-index:3;max-width:790px;background:rgba(255,255,255,.9);padding:22px 24px 20px;margin-top:210px}
-    .eyebrow{display:block;color:var(--pink);font-size:11px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}.eyebrow::before{content:"●";margin-right:8px}
-    h1{font:900 clamp(39px,5vw,76px)/.92 Arial Black,"Helvetica Neue",Arial,sans-serif;letter-spacing:-.065em;margin:0 0 18px;text-transform:uppercase}.lead{font-size:16px;max-width:720px;color:#4f4952;margin:0}.stamp{position:relative;z-index:3;text-align:right;background:var(--pink);color:#fff;padding:17px 19px;border-radius:999px 999px 8px 999px;box-shadow:var(--shadow);font-size:12px;align-self:end}.stamp strong{font-size:14px}
-    .object{position:absolute;z-index:2;pointer-events:none}.orb{width:190px;height:190px;right:18%;top:116px;border-radius:50%;background:radial-gradient(circle at 32% 27%,#fff 0 5%,#fbdbe7 13%,#e78eb0 42%,#a54577 72%,#321740 100%);box-shadow:inset -18px -24px 40px rgba(50,8,48,.28),0 28px 54px rgba(137,61,113,.25)}
-    .ring{width:160px;height:160px;right:5%;top:200px;border:27px solid transparent;border-radius:50%;background:linear-gradient(135deg,#fff,#b7a9bb 24%,#29252c 46%,#f4edf4 66%,#8e788f) border-box;mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);mask-composite:exclude;transform:rotate(-24deg);filter:drop-shadow(0 22px 20px rgba(38,25,39,.22))}.pill3d{width:140px;height:62px;right:28%;top:310px;border-radius:999px;background:linear-gradient(145deg,#fce8ef,#dd7fa3 48%,#7b3564);transform:rotate(-13deg);box-shadow:inset 7px 8px 15px rgba(255,255,255,.7),0 20px 32px rgba(112,49,94,.25)}
-    .insight{position:relative;background:var(--violet-dark);color:#fff;padding:27px 32px 27px 90px;margin:0 0 46px;box-shadow:var(--shadow);overflow:hidden}.insight::before{content:"↗";position:absolute;left:27px;top:20px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--pink);font-size:24px;font-weight:900}.insight strong{color:#ffc8dc}
-    h2{font:900 clamp(32px,4vw,58px)/.95 Arial Black,"Helvetica Neue",Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase;margin:0 0 24px}.section-kicker{display:block;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px;opacity:.7}
-    .timeline-zone{padding:42px 34px 52px;background:#fff}.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:phase}.phase{counter-increment:phase;background:var(--blush);padding:20px;border-radius:70px 70px 18px 18px;min-height:220px;position:relative;border:1px solid #eedce6}.phase::before{content:"0" counter(phase);display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--pink);color:#fff;font-weight:900;font-size:19px;margin-bottom:21px;box-shadow:inset 6px 7px 13px rgba(255,255,255,.35),0 9px 20px rgba(145,57,100,.18)}.phase:nth-child(even)::before{background:var(--violet)}.phase b{display:block;margin:0 0 7px;font-size:17px}.phase span{display:block;color:var(--muted);font-size:13px}.phase em{display:block;color:var(--violet);font-style:normal;font-weight:900;font-size:12px;text-transform:uppercase;margin-bottom:7px}
-    .calendar-zone{position:relative;background:var(--pink);padding:50px 34px 58px;margin:18px 0 0;overflow:hidden}.calendar-zone::after{content:"";position:absolute;right:-65px;top:-65px;width:190px;height:190px;border:34px solid rgba(255,255,255,.34);border-radius:50%}.calendar-zone h2{color:#fff;max-width:880px}.calendar-zone .section-kicker{color:#fff}.calendar{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.month{background:rgba(255,255,255,.9);border-radius:65px 65px 15px 15px;padding:22px 18px 20px;min-height:190px;border:1px solid rgba(255,255,255,.7);box-shadow:0 14px 35px rgba(101,34,72,.13)}.month::before{content:"✦";display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--violet);color:#fff;margin-bottom:16px}.month:nth-child(3n)::before{content:"◆";background:#111}.month b{display:block;color:var(--violet);margin-bottom:8px;font-size:12px;text-transform:uppercase}.month strong{display:block;margin-bottom:7px;font-size:17px;line-height:1.15}.month span{display:block;color:var(--muted);font-size:13px}.month.optional{background:#f9e7ef}.month.future{background:#eadcf1}
-    .plan-zone{background:#f3e9f7;padding:50px 34px 58px}.plan-zone h2{max-width:970px}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 20px}.pill,button{border:1px solid rgba(64,36,82,.24);background:#fff;color:var(--ink);border-radius:999px;padding:10px 15px;font:700 13px/1 "Helvetica Neue",Arial,sans-serif}.pill{font-size:12px}.pill.rec{background:var(--pink);border-color:var(--pink);color:#fff}button{cursor:pointer}button.active{background:#111;color:#fff;border-color:#111}
-    .table-wrap{overflow:auto;background:#fff;border-radius:18px;box-shadow:var(--shadow);border:1px solid #e2d5e7}table{width:100%;border-collapse:collapse;min-width:1320px}th{position:sticky;top:0;background:var(--violet-dark);color:#fff;text-align:left;padding:15px 12px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;border-bottom:0}td{padding:15px 12px;border-bottom:1px solid #eee7f0;vertical-align:top}tr:last-child td{border-bottom:0}tr[data-rec="yes"]{background:#fff5f8}.course{font-weight:900;display:block;margin-bottom:4px}.meta,.small{color:var(--muted);font-size:12px}.tag{display:inline-block;padding:5px 8px;border-radius:999px;background:#eee;color:#555;font-size:10px;font-weight:900;margin:0 4px 4px 0;text-transform:uppercase}.tag.choose{background:#f7d6e3;color:#813454}.tag.add{background:#e5d6ef;color:#56306d}.tag.cert{background:#201925;color:#fff}.score{white-space:nowrap}.decision{font-weight:900}.decision.yes{color:var(--green)}.decision.later{color:var(--amber)}
-    .glossary-zone{position:relative;background:#111;color:#fff;padding:52px 34px 60px;overflow:hidden}.glossary-zone::before{content:"ABC";position:absolute;right:28px;top:12px;font:900 120px/1 Arial Black,Arial,sans-serif;color:rgba(223,131,166,.18);letter-spacing:-.08em}.glossary-zone h2{color:#fff}.glossary-zone .section-kicker{color:var(--pink)}.glossary{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.term{background:#211b25;border:1px solid #3b303f;border-radius:18px;padding:18px;min-height:125px}.term:nth-child(3n+2){background:var(--violet-dark)}.term:nth-child(4n){background:#713952}.term dt{font:900 22px/1 Arial Black,Arial,sans-serif;color:#ffc1d8;margin-bottom:10px}.term dd{margin:0;color:#e5dce7;font-size:13px}.term em{color:#fff}
-    .route{margin:22px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}.route>div{background:#fff;border:1px solid #eee6ef;border-radius:18px;padding:23px;box-shadow:var(--shadow)}.route>div:first-child{background:var(--pink-light)}.route h3{margin:0 0 8px;font-size:18px}.route h3::before{content:"●";color:var(--pink);margin-right:8px}.route p{margin:0;color:var(--muted)}footer{margin-top:28px;padding:0 5px;color:var(--muted);font-size:12px}
-    @media(max-width:1000px){header{min-height:570px;grid-template-columns:1fr}.hero-copy{margin-top:250px}.stamp{justify-self:start;text-align:left}.orb{right:16%;top:125px}.ring{right:0}.timeline{grid-template-columns:repeat(2,1fr)}.calendar{grid-template-columns:repeat(2,1fr)}.glossary{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:650px){main{padding:10px 10px 45px}header{min-height:600px;padding:25px 18px}header::before{top:92px;font-size:88px}.hero-copy{margin-top:265px;padding:18px 15px}.orb{width:130px;height:130px;right:24%;top:145px}.ring{width:110px;height:110px;border-width:20px;right:1%;top:225px}.pill3d{width:100px;height:44px;right:42%;top:278px}.timeline-zone,.calendar-zone,.plan-zone,.glossary-zone{padding:38px 18px 44px}.timeline,.calendar,.glossary,.route{grid-template-columns:1fr}.phase,.month{min-height:auto;border-radius:48px 48px 15px 15px}h2{font-size:36px}}
-    @media print{body{background:#fff}main{max-width:none;padding:10px}header{min-height:300px}.object{display:none}.controls{display:none}.phase,.month,.table-wrap,.route>div,.term,.insight{box-shadow:none}.table-wrap{overflow:visible}th{position:static}table{min-width:0;font-size:9px}td,th{padding:5px}.timeline{grid-template-columns:repeat(5,1fr)}.calendar{grid-template-columns:repeat(4,1fr)}}
+    /* ============================================================
+       ANIMATION KEYFRAMES
+    ============================================================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50%       { transform: translateY(-14px) scale(1.025); }
+    }
+    @keyframes floatRing {
+      0%, 100% { transform: rotate(-24deg) translateY(0px); }
+      50%       { transform: rotate(-18deg) translateY(-10px); }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: rotate(-13deg) translateY(0px); }
+      50%       { transform: rotate(-9deg) translateY(-8px); }
+    }
+    @keyframes bgTextDrift {
+      0%, 100% { transform: translateX(0); }
+      50%       { transform: translateX(6px); }
+    }
+    @keyframes stampBounce {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50%       { transform: translateY(-5px) scale(1.02); }
+    }
+    @keyframes insightPulse {
+      0%, 100% { box-shadow: 0 18px 50px rgba(63,31,76,.12); }
+      50%       { box-shadow: 0 22px 60px rgba(110,63,145,.22); }
+    }
+    @keyframes eyebrowDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: .6; transform: scale(1.4); }
+    }
+    @keyframes counterOrb {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.08); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position:  200% center; }
+    }
+    /* Reveal utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .55s cubic-bezier(.22,.84,.28,1),
+                  transform .55s cubic-bezier(.22,.84,.28,1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    :root {
+      --ink: #111014;
+      --paper: #fff;
+      --violet: #6e3f91;
+      --violet-dark: #402452;
+      --lilac: #d8b8e8;
+      --pink: #df83a6;
+      --pink-light: #f6d9e5;
+      --blush: #fff3f7;
+      --line: #ded5e1;
+      --muted: #6f6872;
+      --green: #386f5c;
+      --amber: #9b641c;
+      --shadow: 0 18px 50px rgba(63, 31, 76, .12)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+    /* Prevent flash of unanimated state */
+    html.js-ready .reveal {
+      /* transitions enabled only after JS loads */
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--ink);
+      font: 15px/1.5 "Helvetica Neue", Arial, sans-serif
+    }
+
+    a {
+      color: var(--violet);
+      font-weight: 800;
+      text-decoration: none;
+      transition: color .2s ease, opacity .2s ease
+    }
+    a:hover {
+      text-decoration: underline;
+      opacity: .8
+    }
+
+    main {
+      max-width: 1500px;
+      margin: auto;
+      padding: 22px 28px 70px;
+      overflow: hidden
+    }
+
+    header {
+      min-height: 520px;
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(230px, .7fr);
+      gap: 30px;
+      align-items: end;
+      padding: 42px 34px 48px;
+      margin-bottom: 22px;
+      background: #fff;
+      border: 1px solid #eee8ef;
+      overflow: hidden;
+      animation: fadeIn .9s ease both
+    }
+
+    header::before {
+      content: "NEXT\A MOVE";
+      white-space: pre;
+      position: absolute;
+      left: -1vw;
+      top: 70px;
+      font: 900 clamp(84px, 13vw, 205px)/.72 Arial Black, Arial, sans-serif;
+      letter-spacing: -.085em;
+      color: #0f0e12;
+      z-index: 0;
+      animation: bgTextDrift 9s ease-in-out infinite
+    }
+
+    header::after {
+      content: "BRUNE · CAREER ROADMAP";
+      position: absolute;
+      right: 34px;
+      top: 27px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      color: var(--pink)
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 3;
+      max-width: 790px;
+      background: rgba(255, 255, 255, .9);
+      padding: 22px 24px 20px;
+      margin-top: 210px;
+      animation: fadeUp .85s .15s cubic-bezier(.22,.84,.28,1) both
+    }
+
+    .eyebrow {
+      display: block;
+      color: var(--pink);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin-bottom: 12px
+    }
+
+    .eyebrow::before {
+      content: "●";
+      margin-right: 8px;
+      display: inline-block;
+      animation: eyebrowDot 2.6s ease-in-out infinite
+    }
+
+    h1 {
+      font: 900 clamp(39px, 5vw, 76px)/.92 Arial Black, "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: -.065em;
+      margin: 0 0 18px;
+      text-transform: uppercase
+    }
+
+    .lead {
+      font-size: 16px;
+      max-width: 720px;
+      color: #4f4952;
+      margin: 0
+    }
+
+    .stamp {
+      position: relative;
+      z-index: 3;
+      text-align: right;
+      background: var(--pink);
+      color: #fff;
+      padding: 17px 19px;
+      border-radius: 999px 999px 8px 999px;
+      box-shadow: var(--shadow);
+      font-size: 12px;
+      align-self: end;
+      animation: fadeUp .85s .35s cubic-bezier(.22,.84,.28,1) both,
+                 stampBounce 5s 1.5s ease-in-out infinite
+    }
+
+    .stamp strong {
+      font-size: 14px
+    }
+
+    .object {
+      position: absolute;
+      z-index: 2;
+      pointer-events: none
+    }
+
+    .orb {
+      width: 190px;
+      height: 190px;
+      right: 18%;
+      top: 116px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 32% 27%, #fff 0 5%, #fbdbe7 13%, #e78eb0 42%, #a54577 72%, #321740 100%);
+      box-shadow: inset -18px -24px 40px rgba(50, 8, 48, .28), 0 28px 54px rgba(137, 61, 113, .25);
+      animation: floatOrb 6s ease-in-out infinite,
+                 fadeIn .7s .1s ease both
+    }
+
+    .ring {
+      width: 160px;
+      height: 160px;
+      right: 5%;
+      top: 200px;
+      border: 27px solid transparent;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fff, #b7a9bb 24%, #29252c 46%, #f4edf4 66%, #8e788f) border-box;
+      mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+      mask-composite: exclude;
+      filter: drop-shadow(0 22px 20px rgba(38, 25, 39, .22));
+      animation: floatRing 7.5s 0.8s ease-in-out infinite,
+                 fadeIn .7s .25s ease both
+    }
+
+    .pill3d {
+      width: 140px;
+      height: 62px;
+      right: 28%;
+      top: 310px;
+      border-radius: 999px;
+      background: linear-gradient(145deg, #fce8ef, #dd7fa3 48%, #7b3564);
+      box-shadow: inset 7px 8px 15px rgba(255, 255, 255, .7), 0 20px 32px rgba(112, 49, 94, .25);
+      animation: floatPill 5.5s 0.4s ease-in-out infinite,
+                 fadeIn .7s .4s ease both
+    }
+
+    .insight {
+      position: relative;
+      background: var(--violet-dark);
+      color: #fff;
+      padding: 27px 32px 27px 90px;
+      margin: 0 0 46px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      animation: insightPulse 4s 2s ease-in-out infinite
+    }
+
+    .insight::before {
+      content: "↗";
+      position: absolute;
+      left: 27px;
+      top: 20px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--pink);
+      font-size: 24px;
+      font-weight: 900
+    }
+
+    .insight strong {
+      color: #ffc8dc
+    }
+
+    h2 {
+      font: 900 clamp(32px, 4vw, 58px)/.95 Arial Black, "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+      margin: 0 0 24px
+    }
+
+    .section-kicker {
+      display: block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      opacity: .7
+    }
+
+    .timeline-zone {
+      padding: 42px 34px 52px;
+      background: #fff
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      counter-reset: phase
+    }
+
+    .phase {
+      counter-increment: phase;
+      background: var(--blush);
+      padding: 20px;
+      border-radius: 70px 70px 18px 18px;
+      min-height: 220px;
+      position: relative;
+      border: 1px solid #eedce6;
+      transition: transform .3s cubic-bezier(.22,.84,.28,1),
+                  box-shadow .3s ease
+    }
+    .phase:hover {
+      transform: translateY(-6px) scale(1.015);
+      box-shadow: 0 24px 48px rgba(110,63,145,.18)
+    }
+
+    .phase::before {
+      content: "0" counter(phase);
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: var(--pink);
+      color: #fff;
+      font-weight: 900;
+      font-size: 19px;
+      margin-bottom: 21px;
+      box-shadow: inset 6px 7px 13px rgba(255, 255, 255, .35), 0 9px 20px rgba(145, 57, 100, .18);
+      transition: transform .3s ease, box-shadow .3s ease;
+      animation: counterOrb 3.5s ease-in-out infinite
+    }
+    .phase:hover::before {
+      transform: scale(1.12);
+      box-shadow: 0 14px 28px rgba(145,57,100,.28)
+    }
+
+    .phase:nth-child(even)::before {
+      background: var(--violet)
+    }
+
+    .phase b {
+      display: block;
+      margin: 0 0 7px;
+      font-size: 17px
+    }
+
+    .phase span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .phase em {
+      display: block;
+      color: var(--violet);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 7px
+    }
+
+    .calendar-zone {
+      position: relative;
+      background: var(--pink);
+      padding: 50px 34px 58px;
+      margin: 18px 0 0;
+      overflow: hidden
+    }
+
+    .calendar-zone::after {
+      content: "";
+      position: absolute;
+      right: -65px;
+      top: -65px;
+      width: 190px;
+      height: 190px;
+      border: 34px solid rgba(255, 255, 255, .34);
+      border-radius: 50%
+    }
+
+    .calendar-zone h2 {
+      color: #fff;
+      max-width: 880px
+    }
+
+    .calendar-zone .section-kicker {
+      color: #fff
+    }
+
+    .calendar {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px
+    }
+
+    .month {
+      background: rgba(255, 255, 255, .9);
+      border-radius: 65px 65px 15px 15px;
+      padding: 22px 18px 20px;
+      min-height: 190px;
+      border: 1px solid rgba(255, 255, 255, .7);
+      box-shadow: 0 14px 35px rgba(101, 34, 72, .13);
+      transition: transform .3s cubic-bezier(.22,.84,.28,1),
+                  box-shadow .3s ease,
+                  background .25s ease
+    }
+    .month:hover {
+      transform: translateY(-7px) scale(1.018);
+      box-shadow: 0 28px 52px rgba(101,34,72,.22);
+      background: #fff
+    }
+
+    .month::before {
+      content: "✦";
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--violet);
+      color: #fff;
+      margin-bottom: 16px
+    }
+
+    .month:nth-child(3n)::before {
+      content: "◆";
+      background: #111
+    }
+
+    .month b {
+      display: block;
+      color: var(--violet);
+      margin-bottom: 8px;
+      font-size: 12px;
+      text-transform: uppercase
+    }
+
+    .month strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 17px;
+      line-height: 1.15
+    }
+
+    .month span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px
+    }
+
+    .month.optional {
+      background: #f9e7ef
+    }
+
+    .month.future {
+      background: #eadcf1
+    }
+
+    .plan-zone {
+      background: #f3e9f7;
+      padding: 50px 34px 58px
+    }
+
+    .plan-zone h2 {
+      max-width: 970px
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 0 20px
+    }
+
+    .pill,
+    button {
+      border: 1px solid rgba(64, 36, 82, .24);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 10px 15px;
+      font: 700 13px/1 "Helvetica Neue", Arial, sans-serif;
+      transition: transform .2s ease, box-shadow .2s ease,
+                  background .2s ease, color .2s ease
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(110,63,145,.18)
+    }
+    button:active {
+      transform: translateY(0) scale(.97)
+    }
+
+    .pill {
+      font-size: 12px
+    }
+
+    .pill.rec {
+      background: var(--pink);
+      border-color: var(--pink);
+      color: #fff
+    }
+
+    button {
+      cursor: pointer
+    }
+
+    button.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+      box-shadow: 0 4px 14px rgba(0,0,0,.22)
+    }
+
+    .table-wrap {
+      overflow: auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 1px solid #e2d5e7
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1320px
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: var(--violet-dark);
+      color: #fff;
+      text-align: left;
+      padding: 15px 12px;
+      font-size: 11px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      border-bottom: 0
+    }
+
+    td {
+      padding: 15px 12px;
+      border-bottom: 1px solid #eee7f0;
+      vertical-align: top;
+      transition: background .2s ease
+    }
+
+    tr:last-child td {
+      border-bottom: 0
+    }
+    tbody tr {
+      transition: background .22s ease
+    }
+    tbody tr:hover td {
+      background: #fdf4f9
+    }
+    tr[data-rec="yes"]:hover td {
+      background: #ffedf4
+    }
+
+    tr[data-rec="yes"] {
+      background: #fff5f8
+    }
+
+    .course {
+      font-weight: 900;
+      display: block;
+      margin-bottom: 4px
+    }
+
+    .meta,
+    .small {
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 8px;
+      border-radius: 999px;
+      background: #eee;
+      color: #555;
+      font-size: 10px;
+      font-weight: 900;
+      margin: 0 4px 4px 0;
+      text-transform: uppercase
+    }
+
+    .tag.choose {
+      background: #f7d6e3;
+      color: #813454
+    }
+
+    .tag.add {
+      background: #e5d6ef;
+      color: #56306d
+    }
+
+    .tag.cert {
+      background: #201925;
+      color: #fff
+    }
+
+    .score {
+      white-space: nowrap
+    }
+
+    .decision {
+      font-weight: 900
+    }
+
+    .decision.yes {
+      color: var(--green)
+    }
+
+    .decision.later {
+      color: var(--amber)
+    }
+
+    .glossary-zone {
+      position: relative;
+      background: #111;
+      color: #fff;
+      padding: 52px 34px 60px;
+      overflow: hidden
+    }
+
+    .glossary-zone::before {
+      content: "ABC";
+      position: absolute;
+      right: 28px;
+      top: 12px;
+      font: 900 120px/1 Arial Black, Arial, sans-serif;
+      color: rgba(223, 131, 166, .18);
+      letter-spacing: -.08em
+    }
+
+    .glossary-zone h2 {
+      color: #fff
+    }
+
+    .glossary-zone .section-kicker {
+      color: var(--pink)
+    }
+
+    .glossary {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px
+    }
+
+    .term {
+      background: #211b25;
+      border: 1px solid #3b303f;
+      border-radius: 18px;
+      padding: 18px;
+      min-height: 125px;
+      transition: transform .3s cubic-bezier(.22,.84,.28,1),
+                  box-shadow .3s ease
+    }
+    .term:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 18px 40px rgba(0,0,0,.35)
+    }
+
+    .term:nth-child(3n+2) {
+      background: var(--violet-dark)
+    }
+
+    .term:nth-child(4n) {
+      background: #713952
+    }
+
+    .term dt {
+      font: 900 22px/1 Arial Black, Arial, sans-serif;
+      color: #ffc1d8;
+      margin-bottom: 10px
+    }
+
+    .term dd {
+      margin: 0;
+      color: #e5dce7;
+      font-size: 13px
+    }
+
+    .term em {
+      color: #fff
+    }
+
+    .route {
+      margin: 22px 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px
+    }
+
+    .route>div {
+      background: #fff;
+      border: 1px solid #eee6ef;
+      border-radius: 18px;
+      padding: 23px;
+      box-shadow: var(--shadow);
+      transition: transform .3s cubic-bezier(.22,.84,.28,1),
+                  box-shadow .3s ease
+    }
+    .route>div:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 26px 52px rgba(63,31,76,.16)
+    }
+
+    .route>div:first-child {
+      background: var(--pink-light)
+    }
+
+    .route h3 {
+      margin: 0 0 8px;
+      font-size: 18px
+    }
+
+    .route h3::before {
+      content: "●";
+      color: var(--pink);
+      margin-right: 8px
+    }
+
+    .route p {
+      margin: 0;
+      color: var(--muted)
+    }
+
+    footer {
+      margin-top: 28px;
+      padding: 0 5px;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    @media(max-width:1000px) {
+      header {
+        min-height: 570px;
+        grid-template-columns: 1fr
+      }
+
+      .hero-copy {
+        margin-top: 250px
+      }
+
+      .stamp {
+        justify-self: start;
+        text-align: left
+      }
+
+      .orb {
+        right: 16%;
+        top: 125px
+      }
+
+      .ring {
+        right: 0
+      }
+
+      .timeline {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .calendar {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .glossary {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:650px) {
+      main {
+        padding: 10px 10px 45px
+      }
+
+      header {
+        min-height: 600px;
+        padding: 25px 18px
+      }
+
+      header::before {
+        top: 92px;
+        font-size: 88px
+      }
+
+      .hero-copy {
+        margin-top: 265px;
+        padding: 18px 15px
+      }
+
+      .orb {
+        width: 130px;
+        height: 130px;
+        right: 24%;
+        top: 145px
+      }
+
+      .ring {
+        width: 110px;
+        height: 110px;
+        border-width: 20px;
+        right: 1%;
+        top: 225px
+      }
+
+      .pill3d {
+        width: 100px;
+        height: 44px;
+        right: 42%;
+        top: 278px
+      }
+
+      .timeline-zone,
+      .calendar-zone,
+      .plan-zone,
+      .glossary-zone {
+        padding: 38px 18px 44px
+      }
+
+      .timeline,
+      .calendar,
+      .glossary,
+      .route {
+        grid-template-columns: 1fr
+      }
+
+      .phase,
+      .month {
+        min-height: auto;
+        border-radius: 48px 48px 15px 15px
+      }
+
+      h2 {
+        font-size: 36px
+      }
+    }
+
+    /* Shimmer on recommended badge */
+    .pill.rec {
+      background: linear-gradient(90deg, var(--pink) 0%, #f0a0c0 50%, var(--pink) 100%);
+      background-size: 200% auto;
+      animation: shimmer 3s linear infinite
+    }
+
+    @media print {
+      body {
+        background: #fff
+      }
+
+      main {
+        max-width: none;
+        padding: 10px
+      }
+
+      header {
+        min-height: 300px
+      }
+
+      .object {
+        display: none
+      }
+
+      .controls {
+        display: none
+      }
+
+      .phase,
+      .month,
+      .table-wrap,
+      .route>div,
+      .term,
+      .insight {
+        box-shadow: none
+      }
+
+      .table-wrap {
+        overflow: visible
+      }
+
+      th {
+        position: static
+      }
+
+      table {
+        min-width: 0;
+        font-size: 9px
+      }
+
+      td,
+      th {
+        padding: 5px
+      }
+
+      .timeline {
+        grid-template-columns: repeat(5, 1fr)
+      }
+
+      .calendar {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
   </style>
 </head>
+
 <body>
-<main>
-  <header>
-    <div class="hero-copy"><span class="eyebrow">Professional growth</span><h1>Plan estratégico de formación<br>Project Management</h1><p class="lead">Ruta diseñada para una arquitecta y Project Manager con experiencia real, que necesita ordenar teoría, evolucionar hacia Operations y convertir lo aprendido en procesos y capacitación interna.</p></div>
-    <div class="stamp">Revisión de oferta vigente<br><strong>21 septiembre 2026</strong></div>
-    <div class="object orb" aria-hidden="true"></div><div class="object ring" aria-hidden="true"></div><div class="object pill3d" aria-hidden="true"></div>
-  </header>
-  <div class="insight"><strong>Decisión central:</strong> este es tu plan estratégico integral de formación. A partir de esta ruta, podés decidir qué curso proponer a la empresa —priorizando el retorno organizacional, el tiempo laboral y la inversión requerida— y qué formación realizar en paralelo con tu propio tiempo y presupuesto. La financiación de la empresa es una posible palanca dentro del plan, no el criterio que ordena toda la ruta. PMP queda como objetivo personal a partir de 2029.</div>
+  <main>
+    <header>
+      <div class="hero-copy"><span class="eyebrow">Professional growth</span>
+        <h1>Plan estratégico de formación<br>Project Management</h1>
+        <p class="lead">Ruta diseñada para una arquitecta y Project Manager con experiencia real, que necesita ordenar
+          teoría, evolucionar hacia Operations y convertir lo aprendido en procesos y capacitación interna.</p>
+      </div>
+      <div class="stamp">Revisión de oferta vigente<br><strong>21 septiembre 2026</strong></div>
+      <div class="object orb" aria-hidden="true"></div>
+      <div class="object ring" aria-hidden="true"></div>
+      <div class="object pill3d" aria-hidden="true"></div>
+    </header>
+    <div class="insight"><strong>Decisión central:</strong> este es tu plan estratégico integral de formación. A partir
+      de esta ruta, podés decidir qué curso proponer a la empresa —priorizando el retorno organizacional, el tiempo
+      laboral y la inversión requerida— y qué formación realizar en paralelo con tu propio tiempo y presupuesto. La
+      financiación de la empresa es una posible palanca dentro del plan, no el criterio que ordena toda la ruta. PMP
+      queda como objetivo personal a partir de 2029.</div>
 
-  <div class="timeline-zone">
-  <span class="section-kicker">01 · visión general</span><h2>Timeline recomendado · 12 a 15 meses</h2>
-  <section class="timeline" aria-label="Timeline del plan">
-    <div class="phase"><em>Octubre 2026</em><b>Base PM</b><span>Elegir una sola ruta troncal. Aplicar plantillas y vocabulario en un proyecto actual.</span></div>
-    <div class="phase"><em>Noviembre 2026</em><b>Agile</b><span>Incorporar Scrum, Kanban, Lean y enfoques híbridos; probarlos en un flujo interno.</span></div>
-    <div class="phase"><em>Diciembre 2026–febrero 2027</em><b>Operations + finanzas</b><span>Comprender procesos, capacidad, costos y rentabilidad.</span></div>
-    <div class="phase"><em>Marzo–junio 2027</em><b>Liderazgo + BIM</b><span>Profundizar liderazgo y conectar gestión con información y estándares.</span></div>
-    <div class="phase"><em>2029 · horizonte personal</em><b>Evaluar PMP</b><span>Revisar requisitos y preparar la certificación solo cuando exista experiencia elegible suficiente.</span></div>
-  </section>
-  </div>
+    <div class="timeline-zone">
+      <span class="section-kicker">01 · visión general</span>
+      <h2>Timeline recomendado · 12 a 15 meses</h2>
+      <section class="timeline" aria-label="Timeline del plan">
+        <div class="phase"><em>Octubre 2026</em><b>Base PM</b><span>Elegir una sola ruta troncal. Aplicar plantillas y
+            vocabulario en un proyecto actual.</span></div>
+        <div class="phase"><em>Noviembre 2026</em><b>Agile</b><span>Incorporar Scrum, Kanban, Lean y enfoques híbridos;
+            probarlos en un flujo interno.</span></div>
+        <div class="phase"><em>Diciembre 2026–febrero 2027</em><b>Operations + finanzas</b><span>Comprender procesos,
+            capacidad, costos y rentabilidad.</span></div>
+        <div class="phase"><em>Marzo–junio 2027</em><b>Liderazgo + BIM</b><span>Profundizar liderazgo y conectar gestión
+            con información y estándares.</span></div>
+        <div class="phase"><em>2029 · horizonte personal</em><b>Evaluar PMP</b><span>Revisar requisitos y preparar la
+            certificación solo cuando exista experiencia elegible suficiente.</span></div>
+      </section>
+    </div>
 
-  <div class="calendar-zone">
-  <span class="section-kicker">02 · calendario</span><h2>Calendario sugerido · desde octubre de 2026</h2>
-  <section class="calendar" aria-label="Calendario mensual sugerido">
-    <div class="month"><b>Octubre 2026</b><strong>Formación troncal de PM</strong><span>Definir si se propone a la empresa o se realiza como inversión personal. Aplicación: checklist de kickoff, alcance y stakeholders.</span></div>
-    <div class="month"><b>Noviembre 2026</b><strong>Metodologías ágiles</strong><span>Google Agile Project Management. Piloto: tablero Kanban y retrospectiva en un equipo.</span></div>
-    <div class="month"><b>Diciembre 2026</b><strong>Aplicación y cierre</strong><span>Documentar aprendizajes, medir resultados y compartir una capacitación interna breve.</span></div>
-    <div class="month"><b>Enero–febrero 2027</b><strong>Operations + finanzas</strong><span>Mapear un proceso, detectar cuellos de botella e incorporar lectura económica básica.</span></div>
-    <div class="month"><b>Marzo–abril 2027</b><strong>Liderazgo</strong><span>Motivación, feedback, influencia sin autoridad, desempeño y desarrollo de equipos.</span></div>
-    <div class="month"><b>Mayo–junio 2027</b><strong>BIM estratégico</strong><span>Elegir buildingSMART o Autodesk según el foco que la empresa quiera desarrollar.</span></div>
-    <div class="month optional"><b>Julio 2027 · opcional</b><strong>IA aplicada a PM</strong><span>Automatizar documentación, reporting y tareas repetitivas con criterios seguros.</span></div>
-    <div class="month future"><b>2029 · objetivo personal</b><strong>Reevaluar PMP</strong><span>Reconstruir experiencia elegible, confirmar requisitos y decidir si preparar el examen.</span></div>
-  </section>
-  </div>
+    <div class="calendar-zone">
+      <span class="section-kicker">02 · calendario</span>
+      <h2>Calendario sugerido · desde octubre de 2026</h2>
+      <section class="calendar" aria-label="Calendario mensual sugerido">
+        <div class="month"><b>Octubre 2026</b><strong>Formación troncal de PM</strong><span>Definir si se propone a la
+            empresa o se realiza como inversión personal. Aplicación: checklist de kickoff, alcance y
+            stakeholders.</span></div>
+        <div class="month"><b>Noviembre 2026</b><strong>Metodologías ágiles</strong><span>Google Agile Project
+            Management. Piloto: tablero Kanban y retrospectiva en un equipo.</span></div>
+        <div class="month"><b>Diciembre 2026</b><strong>Aplicación y cierre</strong><span>Documentar aprendizajes, medir
+            resultados y compartir una capacitación interna breve.</span></div>
+        <div class="month"><b>Enero–febrero 2027</b><strong>Operations + finanzas</strong><span>Mapear un proceso,
+            detectar cuellos de botella e incorporar lectura económica básica.</span></div>
+        <div class="month"><b>Marzo–abril 2027</b><strong>Liderazgo</strong><span>Motivación, feedback, influencia sin
+            autoridad, desempeño y desarrollo de equipos.</span></div>
+        <div class="month"><b>Mayo–junio 2027</b><strong>BIM estratégico</strong><span>Elegir buildingSMART o Autodesk
+            según el foco que la empresa quiera desarrollar.</span></div>
+        <div class="month optional"><b>Julio 2027 · opcional</b><strong>IA aplicada a PM</strong><span>Automatizar
+            documentación, reporting y tareas repetitivas con criterios seguros.</span></div>
+        <div class="month future"><b>2029 · objetivo personal</b><strong>Reevaluar PMP</strong><span>Reconstruir
+            experiencia elegible, confirmar requisitos y decidir si preparar el examen.</span></div>
+      </section>
+    </div>
 
-  <div class="plan-zone">
-  <span class="section-kicker">03 · plan de formación</span><h2>Cuadro maestro · cursos, alternativas y certificaciones</h2>
-  <div class="controls" role="group" aria-label="Filtros de tabla">
-    <button class="active" data-filter="all">Ver todo</button><button data-filter="recommended">Solo ruta recomendada</button><button data-filter="training">Mayor potencial para capacitar</button>
-    <span class="pill rec">Recomendado</span><span class="pill">Las opciones con el mismo nombre de grupo son alternativas</span>
-  </div>
-  <div class="table-wrap">
-  <table id="planTable">
-    <thead><tr><th>Orden / momento</th><th>Decisión</th><th>Curso o certificación</th><th>Qué cubre y por qué entra</th><th>Duración · idioma · constancia</th><th>Valor para vos</th><th>Valor para capacitar</th><th>Recomendación</th><th>Enlace</th></tr></thead>
-    <tbody>
-      <tr data-rec="no" data-training="high"><td>0 · diagnóstico</td><td><span class="tag add">Recurso interno</span></td><td><span class="course">PMI KICKOFF™</span><span class="meta">PMI</span></td><td>Repaso express de enfoques predictivo y ágil, con plantillas. Demasiado básico como formación principal para vos, pero excelente para onboarding de PA/PC.</td><td>&lt;1 h · varios idiomas · badge</td><td class="score" aria-label="2 de 5">●●○○○</td><td class="score" aria-label="5 de 5">●●●●●</td><td><span class="decision later">Usarlo para otros</span></td><td><a href="https://www.pmi.org/kickoff" target="_blank">Abrir ↗</a></td></tr>
+    <div class="plan-zone">
+      <span class="section-kicker">03 · plan de formación</span>
+      <h2>Cuadro maestro · cursos, alternativas y certificaciones</h2>
+      <div class="controls" role="group" aria-label="Filtros de tabla">
+        <button class="active" data-filter="all">Ver todo</button><button data-filter="recommended">Solo ruta
+          recomendada</button><button data-filter="training">Mayor potencial para capacitar</button>
+        <span class="pill rec">Recomendado</span><span class="pill">Las opciones con el mismo nombre de grupo son
+          alternativas</span>
+      </div>
+      <div class="table-wrap">
+        <table id="planTable">
+          <thead>
+            <tr>
+              <th>Orden / momento</th>
+              <th>Decisión</th>
+              <th>Curso o certificación</th>
+              <th>Qué cubre y por qué entra</th>
+              <th>Duración · idioma · constancia</th>
+              <th>Valor para vos</th>
+              <th>Valor para capacitar</th>
+              <th>Recomendación</th>
+              <th>Enlace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-rec="no" data-training="high">
+              <td>0 · diagnóstico</td>
+              <td><span class="tag add">Recurso interno</span></td>
+              <td><span class="course">PMI KICKOFF™</span><span class="meta">PMI</span></td>
+              <td>Repaso express de enfoques predictivo y ágil, con plantillas. Demasiado básico como formación
+                principal para vos, pero excelente para onboarding de PA/PC.</td>
+              <td>&lt;1 h · varios idiomas · badge</td>
+              <td class="score" aria-label="2 de 5">●●○○○</td>
+              <td class="score" aria-label="5 de 5">●●●●●</td>
+              <td><span class="decision later">Usarlo para otros</span></td>
+              <td><a href="https://www.pmi.org/kickoff" target="_blank">Abrir ↗</a></td>
+            </tr>
 
-      <tr data-rec="yes" data-training="high"><td>1A · octubre 2026</td><td><span class="tag choose">Base PM · opción 1 de 3</span><span class="tag add">Recomendado</span></td><td><span class="course">Fundamentos profesionales de gestión de proyectos</span><span class="meta">Microsoft + LinkedIn Learning</span></td><td>Ruta integral: fundamentos, ética, cronogramas, presupuestos, equipos, comunicación, stakeholders, riesgos, calidad y Microsoft 365. Reemplaza todos los cursos individuales de la tabla anterior.</td><td>17 h · español · certificado de finalización</td><td>●●●●●</td><td>●●●●○</td><td><span class="decision yes">Mejor relación tiempo/aplicación</span><div class="small">Completar antes del 15/10/2026 si querés evitar el cambio de contenidos anunciado.</div></td><td><a href="https://es.linkedin.com/learning/paths/fundamentos-profesionales-de-gestion-de-proyectos-por-microsoft-y-linkedin" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="high"><td>1B · alternativa extensa</td><td><span class="tag choose">Base PM · opción 2 de 3</span></td><td><span class="course">Google Project Management Professional Certificate</span><span class="meta">Google · Coursera</span></td><td>Alternativa profunda y práctica: ciclo completo, documentación, Agile/Scrum, riesgos, stakeholders, presupuesto, procurement, calidad y capstone. Cubre más práctica que LinkedIn, pero gran parte será nivel inicial para vos.</td><td>≈140 h · inglés + idiomas disponibles · certificado profesional</td><td>●●●●○</td><td>●●●●○</td><td><span class="decision later">Elegir si querés inmersión</span></td><td><a href="https://www.coursera.org/professional-certificates/google-project-management" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="medium"><td>1C · alternativa IT</td><td><span class="tag choose">Base PM · opción 3 de 3</span></td><td><span class="course">IBM Project Manager Professional Certificate</span><span class="meta">IBM · Coursera</span></td><td>Ruta práctica con charter, RACI, presupuesto, riesgos, Agile y capstone; añade preparación CAPM. Es sólida, pero tiene sesgo hacia IT y entrada laboral, menos alineado con tu seniority y sector.</td><td>3 meses · 10 h/sem · inglés + idiomas disponibles · certificado</td><td>●●●○○</td><td>●●●○○</td><td><span class="decision later">Tercera opción</span></td><td><a href="https://www.coursera.org/professional-certificates/ibm-project-manager" target="_blank">Abrir ↗</a></td></tr>
+            <tr data-rec="yes" data-training="high">
+              <td>1A · octubre 2026</td>
+              <td><span class="tag choose">Base PM · opción 1 de 3</span><span class="tag add">Recomendado</span></td>
+              <td><span class="course">Fundamentos profesionales de gestión de proyectos</span><span
+                  class="meta">Microsoft + LinkedIn Learning</span></td>
+              <td>Ruta integral: fundamentos, ética, cronogramas, presupuestos, equipos, comunicación, stakeholders,
+                riesgos, calidad y Microsoft 365. Reemplaza todos los cursos individuales de la tabla anterior.</td>
+              <td>17 h · español · certificado de finalización</td>
+              <td>●●●●●</td>
+              <td>●●●●○</td>
+              <td><span class="decision yes">Mejor relación tiempo/aplicación</span>
+                <div class="small">Completar antes del 15/10/2026 si querés evitar el cambio de contenidos anunciado.
+                </div>
+              </td>
+              <td><a
+                  href="https://es.linkedin.com/learning/paths/fundamentos-profesionales-de-gestion-de-proyectos-por-microsoft-y-linkedin"
+                  target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="high">
+              <td>1B · alternativa extensa</td>
+              <td><span class="tag choose">Base PM · opción 2 de 3</span></td>
+              <td><span class="course">Google Project Management Professional Certificate</span><span
+                  class="meta">Google · Coursera</span></td>
+              <td>Alternativa profunda y práctica: ciclo completo, documentación, Agile/Scrum, riesgos, stakeholders,
+                presupuesto, procurement, calidad y capstone. Cubre más práctica que LinkedIn, pero gran parte será
+                nivel inicial para vos.</td>
+              <td>≈140 h · inglés + idiomas disponibles · certificado profesional</td>
+              <td>●●●●○</td>
+              <td>●●●●○</td>
+              <td><span class="decision later">Elegir si querés inmersión</span></td>
+              <td><a href="https://www.coursera.org/professional-certificates/google-project-management"
+                  target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="medium">
+              <td>1C · alternativa IT</td>
+              <td><span class="tag choose">Base PM · opción 3 de 3</span></td>
+              <td><span class="course">IBM Project Manager Professional Certificate</span><span class="meta">IBM ·
+                  Coursera</span></td>
+              <td>Ruta práctica con charter, RACI, presupuesto, riesgos, Agile y capstone; añade preparación CAPM. Es
+                sólida, pero tiene sesgo hacia IT y entrada laboral, menos alineado con tu seniority y sector.</td>
+              <td>3 meses · 10 h/sem · inglés + idiomas disponibles · certificado</td>
+              <td>●●●○○</td>
+              <td>●●●○○</td>
+              <td><span class="decision later">Tercera opción</span></td>
+              <td><a href="https://www.coursera.org/professional-certificates/ibm-project-manager" target="_blank">Abrir
+                  ↗</a></td>
+            </tr>
 
-      <tr data-rec="yes" data-training="high"><td>1D · noviembre 2026</td><td><span class="tag add">Agile · curso independiente</span><span class="tag add">Para presentar</span></td><td><span class="course">Agile Project Management</span><span class="meta">Google · Coursera</span></td><td>Fundamentos Agile y enfoques híbridos; Scrum, Kanban, Lean, roles, backlogs, sprints, retrospectivas, roadmaps, coaching y adopción organizacional. Permite probar prácticas ágiles sin cursar todo el certificado de Google.</td><td>≈20 h · inglés + 11 idiomas · certificado</td><td>●●●●○</td><td>●●●●●</td><td><span class="decision yes">Mejor respuesta al pedido específico de Agile</span></td><td><a href="https://www.coursera.org/learn/agile-project-management" target="_blank">Abrir ↗</a></td></tr>
+            <tr data-rec="yes" data-training="high">
+              <td>1D · noviembre 2026</td>
+              <td><span class="tag add">Agile · curso independiente</span><span class="tag add">Para presentar</span>
+              </td>
+              <td><span class="course">Agile Project Management</span><span class="meta">Google · Coursera</span></td>
+              <td>Fundamentos Agile y enfoques híbridos; Scrum, Kanban, Lean, roles, backlogs, sprints, retrospectivas,
+                roadmaps, coaching y adopción organizacional. Permite probar prácticas ágiles sin cursar todo el
+                certificado de Google.</td>
+              <td>≈20 h · inglés + 11 idiomas · certificado</td>
+              <td>●●●●○</td>
+              <td>●●●●●</td>
+              <td><span class="decision yes">Mejor respuesta al pedido específico de Agile</span></td>
+              <td><a href="https://www.coursera.org/learn/agile-project-management" target="_blank">Abrir ↗</a></td>
+            </tr>
 
-      <tr data-rec="yes" data-training="high"><td>2 · meses 2–3</td><td><span class="tag add">Sumar</span><span class="tag add">Recomendado</span></td><td><span class="course">Introduction to Operations Management</span><span class="meta">Wharton · Coursera</span></td><td>Análisis y mapeo de procesos, capacidad, flujo, variabilidad, Lean, calidad y mejora continua. Es el salto más importante desde “gestionar proyectos” hacia “diseñar cómo funciona la operación”.</td><td>≈20 h · inglés + 23 idiomas · certificado</td><td>●●●●●</td><td>●●●●●</td><td><span class="decision yes">Prioridad alta</span></td><td><a href="https://www.coursera.org/learn/wharton-operations" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="yes" data-training="medium"><td>3 · mes 3</td><td><span class="tag add">Sumar</span><span class="tag add">Recomendado</span></td><td><span class="course">Finance for Non-Financial Professionals</span><span class="meta">University of California, Irvine · Coursera</span></td><td>Contabilidad, costos, cash flow, ratios, presupuesto, rentabilidad, NPV e IRR. Completa la brecha de business acumen sin convertirte en especialista financiera.</td><td>7 h · inglés + 26 idiomas · certificado</td><td>●●●●●</td><td>●●●○○</td><td><span class="decision yes">Curso corto, impacto alto</span></td><td><a href="https://www.coursera.org/learn/finance-for-non-finance-managers" target="_blank">Abrir ↗</a></td></tr>
+            <tr data-rec="yes" data-training="high">
+              <td>2 · meses 2–3</td>
+              <td><span class="tag add">Sumar</span><span class="tag add">Recomendado</span></td>
+              <td><span class="course">Introduction to Operations Management</span><span class="meta">Wharton ·
+                  Coursera</span></td>
+              <td>Análisis y mapeo de procesos, capacidad, flujo, variabilidad, Lean, calidad y mejora continua. Es el
+                salto más importante desde "gestionar proyectos" hacia "diseñar cómo funciona la operación".</td>
+              <td>≈20 h · inglés + 23 idiomas · certificado</td>
+              <td>●●●●●</td>
+              <td>●●●●●</td>
+              <td><span class="decision yes">Prioridad alta</span></td>
+              <td><a href="https://www.coursera.org/learn/wharton-operations" target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="yes" data-training="medium">
+              <td>3 · mes 3</td>
+              <td><span class="tag add">Sumar</span><span class="tag add">Recomendado</span></td>
+              <td><span class="course">Finance for Non-Financial Professionals</span><span class="meta">University of
+                  California, Irvine · Coursera</span></td>
+              <td>Contabilidad, costos, cash flow, ratios, presupuesto, rentabilidad, NPV e IRR. Completa la brecha de
+                business acumen sin convertirte en especialista financiera.</td>
+              <td>7 h · inglés + 26 idiomas · certificado</td>
+              <td>●●●●●</td>
+              <td>●●●○○</td>
+              <td><span class="decision yes">Curso corto, impacto alto</span></td>
+              <td><a href="https://www.coursera.org/learn/finance-for-non-finance-managers" target="_blank">Abrir ↗</a>
+              </td>
+            </tr>
 
-      <tr data-rec="yes" data-training="high"><td>4A · marzo–abril 2027</td><td><span class="tag choose">Liderazgo · opción 1 de 2</span><span class="tag add">Recomendado</span></td><td><span class="course">Leading People and Teams Specialization</span><span class="meta">University of Michigan · Coursera</span></td><td>Visión, motivación, objetivos, talento, evaluación de performance, influencia sin autoridad y equipos. Sí profundiza: no repite simplemente el módulo de “equipos” del curso troncal.</td><td>4 semanas · 10 h/sem · múltiples idiomas · certificado</td><td>●●●●●</td><td>●●●●●</td><td><span class="decision yes">Ideal para crecer hacia leadership</span></td><td><a href="https://www.coursera.org/specializations/leading-teams" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="medium"><td>4B · alternativa breve</td><td><span class="tag choose">Liderazgo · opción 2 de 2</span></td><td><span class="course">Inspiring and Motivating Individuals</span><span class="meta">University of Michigan · Coursera</span></td><td>Alternativa compacta: visión compartida, metas, expectativas, motivación y feedback. Elegila si no querés cursar la especialización completa.</td><td>17 h · múltiples idiomas · certificado</td><td>●●●●○</td><td>●●●○○</td><td><span class="decision later">Versión breve</span></td><td><a href="https://www.coursera.org/learn/motivate-people-teams" target="_blank">Abrir ↗</a></td></tr>
+            <tr data-rec="yes" data-training="high">
+              <td>4A · marzo–abril 2027</td>
+              <td><span class="tag choose">Liderazgo · opción 1 de 2</span><span class="tag add">Recomendado</span></td>
+              <td><span class="course">Leading People and Teams Specialization</span><span class="meta">University of
+                  Michigan · Coursera</span></td>
+              <td>Visión, motivación, objetivos, talento, evaluación de performance, influencia sin autoridad y equipos.
+                Sí profundiza: no repite simplemente el módulo de "equipos" del curso troncal.</td>
+              <td>4 semanas · 10 h/sem · múltiples idiomas · certificado</td>
+              <td>●●●●●</td>
+              <td>●●●●●</td>
+              <td><span class="decision yes">Ideal para crecer hacia leadership</span></td>
+              <td><a href="https://www.coursera.org/specializations/leading-teams" target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="medium">
+              <td>4B · alternativa breve</td>
+              <td><span class="tag choose">Liderazgo · opción 2 de 2</span></td>
+              <td><span class="course">Inspiring and Motivating Individuals</span><span class="meta">University of
+                  Michigan · Coursera</span></td>
+              <td>Alternativa compacta: visión compartida, metas, expectativas, motivación y feedback. Elegila si no
+                querés cursar la especialización completa.</td>
+              <td>17 h · múltiples idiomas · certificado</td>
+              <td>●●●●○</td>
+              <td>●●●○○</td>
+              <td><span class="decision later">Versión breve</span></td>
+              <td><a href="https://www.coursera.org/learn/motivate-people-teams" target="_blank">Abrir ↗</a></td>
+            </tr>
 
-      <tr data-rec="yes" data-training="high"><td>5A · mayo–junio 2027</td><td><span class="tag choose">BIM · opción 1 de 2</span><span class="tag add">Recomendado</span></td><td><span class="course">buildingSMART Foundation → Management</span><span class="meta">buildingSMART International</span></td><td>openBIM, colaboración e Information Management a nivel estratégico y operativo. Es más transferible que un curso centrado solo en Revit y conecta mejor BIM + PM + capacitación.</td><td>Duración/costo según provider · online posible · certificado y badge</td><td>●●●●●</td><td>●●●●●</td><td><span class="decision yes">Mejor opción estratégica BIM</span><div class="small">Management requiere completar Foundation.</div></td><td><a href="https://education.buildingsmart.org/our-program/" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="medium"><td>5B · alternativa Autodesk</td><td><span class="tag choose">BIM · opción 2 de 2</span></td><td><span class="course">Prepare for BIM Management for Building Design</span><span class="meta">Autodesk</span></td><td>Preparación aplicada a estándares corporativos, evaluación de necesidades, colaboración, data management, Revit y Autodesk Construction Cloud. Más técnica y dependiente del ecosistema Autodesk.</td><td>On demand · inglés · preparación para examen ACP</td><td>●●●●○</td><td>●●●○○</td><td><span class="decision later">Elegir si Autodesk pesa en tu mercado</span></td><td><a href="https://www.autodesk.com/certification/all-certifications/bim-building-design-professional" target="_blank">Abrir ↗</a></td></tr>
+            <tr data-rec="yes" data-training="high">
+              <td>5A · mayo–junio 2027</td>
+              <td><span class="tag choose">BIM · opción 1 de 2</span><span class="tag add">Recomendado</span></td>
+              <td><span class="course">buildingSMART Foundation → Management</span><span class="meta">buildingSMART
+                  International</span></td>
+              <td>openBIM, colaboración e Information Management a nivel estratégico y operativo. Es más transferible
+                que un curso centrado solo en Revit y conecta mejor BIM + PM + capacitación.</td>
+              <td>Duración/costo según provider · online posible · certificado y badge</td>
+              <td>●●●●●</td>
+              <td>●●●●●</td>
+              <td><span class="decision yes">Mejor opción estratégica BIM</span>
+                <div class="small">Management requiere completar Foundation.</div>
+              </td>
+              <td><a href="https://education.buildingsmart.org/our-program/" target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="medium">
+              <td>5B · alternativa Autodesk</td>
+              <td><span class="tag choose">BIM · opción 2 de 2</span></td>
+              <td><span class="course">Prepare for BIM Management for Building Design</span><span
+                  class="meta">Autodesk</span></td>
+              <td>Preparación aplicada a estándares corporativos, evaluación de necesidades, colaboración, data
+                management, Revit y Autodesk Construction Cloud. Más técnica y dependiente del ecosistema Autodesk.</td>
+              <td>On demand · inglés · preparación para examen ACP</td>
+              <td>●●●●○</td>
+              <td>●●●○○</td>
+              <td><span class="decision later">Elegir si Autodesk pesa en tu mercado</span></td>
+              <td><a href="https://www.autodesk.com/certification/all-certifications/bim-building-design-professional"
+                  target="_blank">Abrir ↗</a></td>
+            </tr>
 
-      <tr data-rec="yes" data-training="high"><td>6A · julio 2027</td><td><span class="tag choose">IA · opción 1 de 2</span><span class="tag add">Recomendado</span></td><td><span class="course">Generative AI for Project Managers: 14 Ways to Streamline Your Work</span><span class="meta">LinkedIn Learning</span></td><td>Aplicación directa de IA a entregables del ciclo de proyecto, prompting y automatización. Prioriza casos de uso concretos sobre teoría general.</td><td>2 h 07 min · inglés · certificado</td><td>●●●●●</td><td>●●●●●</td><td><span class="decision yes">Más práctico para implementar</span></td><td><a href="https://www.linkedin.com/learning/generative-ai-for-project-managers-fourteen-ways-to-streamline-your-work" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="medium"><td>6B · alternativa conceptual</td><td><span class="tag choose">IA · opción 2 de 2</span></td><td><span class="course">Artificial Intelligence for Project Managers</span><span class="meta">LinkedIn Learning</span></td><td>Alternativa conceptual: complementar IA, trabajar con datos, construir un modelo de proyecto y aplicar IA en iniciación, planificación, ejecución, control y cierre.</td><td>1 h 11 min · inglés · certificado</td><td>●●●●○</td><td>●●●○○</td><td><span class="decision later">Mejor como introducción</span></td><td><a href="https://www.linkedin.com/learning/artificial-intelligence-for-project-managers-24531458" target="_blank">Abrir ↗</a></td></tr>
+            <tr data-rec="yes" data-training="high">
+              <td>6A · julio 2027</td>
+              <td><span class="tag choose">IA · opción 1 de 2</span><span class="tag add">Recomendado</span></td>
+              <td><span class="course">Generative AI for Project Managers: 14 Ways to Streamline Your Work</span><span
+                  class="meta">LinkedIn Learning</span></td>
+              <td>Aplicación directa de IA a entregables del ciclo de proyecto, prompting y automatización. Prioriza
+                casos de uso concretos sobre teoría general.</td>
+              <td>2 h 07 min · inglés · certificado</td>
+              <td>●●●●●</td>
+              <td>●●●●●</td>
+              <td><span class="decision yes">Más práctico para implementar</span></td>
+              <td><a
+                  href="https://www.linkedin.com/learning/generative-ai-for-project-managers-fourteen-ways-to-streamline-your-work"
+                  target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="medium">
+              <td>6B · alternativa conceptual</td>
+              <td><span class="tag choose">IA · opción 2 de 2</span></td>
+              <td><span class="course">Artificial Intelligence for Project Managers</span><span class="meta">LinkedIn
+                  Learning</span></td>
+              <td>Alternativa conceptual: complementar IA, trabajar con datos, construir un modelo de proyecto y aplicar
+                IA en iniciación, planificación, ejecución, control y cierre.</td>
+              <td>1 h 11 min · inglés · certificado</td>
+              <td>●●●●○</td>
+              <td>●●●○○</td>
+              <td><span class="decision later">Mejor como introducción</span></td>
+              <td><a href="https://www.linkedin.com/learning/artificial-intelligence-for-project-managers-24531458"
+                  target="_blank">Abrir ↗</a></td>
+            </tr>
 
-      <tr data-rec="no" data-training="medium"><td>7A · horizonte 2029</td><td><span class="tag cert">Objetivo futuro</span></td><td><span class="course">PMP®</span><span class="meta">Project Management Institute</span></td><td>Valida liderazgo de proyectos en enfoques predictivo, híbrido y ágil, sin atarte a una industria. No forma parte de la propuesta de financiación actual.</td><td>Examen 180 preguntas · 240 min · español disponible</td><td>●●●●●</td><td>●●●●○</td><td><span class="decision later">Reevaluar en 2029</span></td><td><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="medium"><td>7B · después de PMP</td><td><span class="tag cert">Certificación</span></td><td><span class="course">PMI Construction Professional (PMI-CP)™</span><span class="meta">Project Management Institute</span></td><td>Especialización sectorial en built environment: contratos, liderazgo y gestión de construcción. Exige cuatro módulos previos y experiencia específica.</td><td>4 módulos de 6–10 h + examen · español disponible</td><td>●●●●○</td><td>●●●○○</td><td><span class="decision later">Solo si apuntás a construction PM</span></td><td><a href="https://www.pmi.org/certifications/construction" target="_blank">Abrir ↗</a></td></tr>
-      <tr data-rec="no" data-training="low"><td>7C · opcional</td><td><span class="tag cert">Certificación</span></td><td><span class="course">Autodesk Certified Professional — BIM Management</span><span class="meta">Autodesk</span></td><td>Valida experiencia avanzada en planificación y workflows BIM dentro de Autodesk. Buen sello técnico, pero amplía menos tu perfil de management que PMP.</td><td>120 min · US$200 · inglés · vigencia 3 años</td><td>●●●○○</td><td>●●○○○</td><td><span class="decision later">Complementaria, no prioritaria</span></td><td><a href="https://www.autodesk.com/certification/all-certifications/bim-building-design-professional" target="_blank">Abrir ↗</a></td></tr>
-    </tbody>
-  </table>
-  </div>
-  </div>
+            <tr data-rec="no" data-training="medium">
+              <td>7A · horizonte 2029</td>
+              <td><span class="tag cert">Objetivo futuro</span></td>
+              <td><span class="course">PMP®</span><span class="meta">Project Management Institute</span></td>
+              <td>Valida liderazgo de proyectos en enfoques predictivo, híbrido y ágil, sin atarte a una industria. No
+                forma parte de la propuesta de financiación actual.</td>
+              <td>Examen 180 preguntas · 240 min · español disponible</td>
+              <td>●●●●●</td>
+              <td>●●●●○</td>
+              <td><span class="decision later">Reevaluar en 2029</span></td>
+              <td><a href="https://www.pmi.org/certifications/project-management-pmp" target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="medium">
+              <td>7B · después de PMP</td>
+              <td><span class="tag cert">Certificación</span></td>
+              <td><span class="course">PMI Construction Professional (PMI-CP)™</span><span class="meta">Project
+                  Management Institute</span></td>
+              <td>Especialización sectorial en built environment: contratos, liderazgo y gestión de construcción. Exige
+                cuatro módulos previos y experiencia específica.</td>
+              <td>4 módulos de 6–10 h + examen · español disponible</td>
+              <td>●●●●○</td>
+              <td>●●●○○</td>
+              <td><span class="decision later">Solo si apuntás a construction PM</span></td>
+              <td><a href="https://www.pmi.org/certifications/construction" target="_blank">Abrir ↗</a></td>
+            </tr>
+            <tr data-rec="no" data-training="low">
+              <td>7C · opcional</td>
+              <td><span class="tag cert">Certificación</span></td>
+              <td><span class="course">Autodesk Certified Professional — BIM Management</span><span
+                  class="meta">Autodesk</span></td>
+              <td>Valida experiencia avanzada en planificación y workflows BIM dentro de Autodesk. Buen sello técnico,
+                pero amplía menos tu perfil de management que PMP.</td>
+              <td>120 min · US$200 · inglés · vigencia 3 años</td>
+              <td>●●●○○</td>
+              <td>●●○○○</td>
+              <td><span class="decision later">Complementaria, no prioritaria</span></td>
+              <td><a href="https://www.autodesk.com/certification/all-certifications/bim-building-design-professional"
+                  target="_blank">Abrir ↗</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-  <div class="glossary-zone">
-  <span class="section-kicker">04 · para empezar desde cero</span><h2>Glosario básico</h2>
-  <dl class="glossary">
-    <div class="term"><dt>PM</dt><dd><em>Project Management</em> o gestión de proyectos. También puede referirse a <em>Project Manager</em>, la persona que gestiona el proyecto.</dd></div>
-    <div class="term"><dt>PMI</dt><dd><em>Project Management Institute</em>. Organización internacional que desarrolla estándares y certificaciones de gestión de proyectos.</dd></div>
-    <div class="term"><dt>PMP</dt><dd><em>Project Management Professional</em>. Certificación de PMI para profesionales con experiencia liderando proyectos.</dd></div>
-    <div class="term"><dt>CAPM</dt><dd><em>Certified Associate in Project Management</em>. Certificación inicial de PMI, pensada para perfiles con poca experiencia formal.</dd></div>
-    <div class="term"><dt>IBM</dt><dd><em>International Business Machines</em>. Empresa tecnológica que ofrece uno de los certificados profesionales incluidos como alternativa.</dd></div>
-    <div class="term"><dt>BIM</dt><dd><em>Building Information Modeling</em>. Metodología para gestionar información de edificios durante su ciclo de vida.</dd></div>
-    <div class="term"><dt>openBIM</dt><dd>Enfoque de colaboración BIM basado en estándares abiertos, para intercambiar información entre diferentes programas y participantes.</dd></div>
-    <div class="term"><dt>Agile</dt><dd>Familia de principios y métodos iterativos que priorizan entrega frecuente, colaboración y adaptación al cambio.</dd></div>
-    <div class="term"><dt>Scrum</dt><dd>Marco Agile que organiza el trabajo en períodos breves llamados sprints, con roles, eventos y revisión periódica.</dd></div>
-    <div class="term"><dt>Kanban</dt><dd>Método visual para gestionar el flujo de trabajo, limitar tareas en curso y detectar cuellos de botella.</dd></div>
-    <div class="term"><dt>Lean</dt><dd>Enfoque de mejora que busca eliminar desperdicios, optimizar el flujo y aumentar el valor entregado.</dd></div>
-    <div class="term"><dt>RACI</dt><dd>Matriz que aclara quién es responsable, quién aprueba, quién debe ser consultado y quién informado.</dd></div>
-    <div class="term"><dt>WBS</dt><dd><em>Work Breakdown Structure</em>: descomposición del alcance del proyecto en partes manejables.</dd></div>
-    <div class="term"><dt>Stakeholder</dt><dd>Persona o grupo que influye en el proyecto, participa en él o se ve afectado por sus resultados.</dd></div>
-    <div class="term"><dt>IT</dt><dd><em>Information Technology</em> o tecnologías de la información. En el plan indica una orientación mayor hacia proyectos tecnológicos.</dd></div>
-    <div class="term"><dt>IA / AI</dt><dd>Inteligencia artificial / <em>Artificial Intelligence</em>.</dd></div>
-    <div class="term"><dt>NPV / IRR</dt><dd><em>Net Present Value</em> y <em>Internal Rate of Return</em>: indicadores para evaluar económicamente inversiones.</dd></div>
-    <div class="term"><dt>ACP</dt><dd><em>Autodesk Certified Professional</em>. Certificación profesional de Autodesk; no confundir con PMI-ACP, que es una certificación Agile de PMI.</dd></div>
-  </dl>
-  </div>
+    <div class="glossary-zone">
+      <span class="section-kicker">04 · para empezar desde cero</span>
+      <h2>Glosario básico</h2>
+      <dl class="glossary">
+        <div class="term">
+          <dt>PM</dt>
+          <dd><em>Project Management</em> o gestión de proyectos. También puede referirse a <em>Project Manager</em>, la
+            persona que gestiona el proyecto.</dd>
+        </div>
+        <div class="term">
+          <dt>PMI</dt>
+          <dd><em>Project Management Institute</em>. Organización internacional que desarrolla estándares y
+            certificaciones de gestión de proyectos.</dd>
+        </div>
+        <div class="term">
+          <dt>PMP</dt>
+          <dd><em>Project Management Professional</em>. Certificación de PMI para profesionales con experiencia
+            liderando proyectos.</dd>
+        </div>
+        <div class="term">
+          <dt>CAPM</dt>
+          <dd><em>Certified Associate in Project Management</em>. Certificación inicial de PMI, pensada para perfiles
+            con poca experiencia formal.</dd>
+        </div>
+        <div class="term">
+          <dt>IBM</dt>
+          <dd><em>International Business Machines</em>. Empresa tecnológica que ofrece uno de los certificados
+            profesionales incluidos como alternativa.</dd>
+        </div>
+        <div class="term">
+          <dt>BIM</dt>
+          <dd><em>Building Information Modeling</em>. Metodología para gestionar información de edificios durante su
+            ciclo de vida.</dd>
+        </div>
+        <div class="term">
+          <dt>openBIM</dt>
+          <dd>Enfoque de colaboración BIM basado en estándares abiertos, para intercambiar información entre diferentes
+            programas y participantes.</dd>
+        </div>
+        <div class="term">
+          <dt>Agile</dt>
+          <dd>Familia de principios y métodos iterativos que priorizan entrega frecuente, colaboración y adaptación al
+            cambio.</dd>
+        </div>
+        <div class="term">
+          <dt>Scrum</dt>
+          <dd>Marco Agile que organiza el trabajo en períodos breves llamados sprints, con roles, eventos y revisión
+            periódica.</dd>
+        </div>
+        <div class="term">
+          <dt>Kanban</dt>
+          <dd>Método visual para gestionar el flujo de trabajo, limitar tareas en curso y detectar cuellos de botella.
+          </dd>
+        </div>
+        <div class="term">
+          <dt>Lean</dt>
+          <dd>Enfoque de mejora que busca eliminar desperdicios, optimizar el flujo y aumentar el valor entregado.</dd>
+        </div>
+        <div class="term">
+          <dt>RACI</dt>
+          <dd>Matriz que aclara quién es responsable, quién aprueba, quién debe ser consultado y quién informado.</dd>
+        </div>
+        <div class="term">
+          <dt>WBS</dt>
+          <dd><em>Work Breakdown Structure</em>: descomposición del alcance del proyecto en partes manejables.</dd>
+        </div>
+        <div class="term">
+          <dt>Stakeholder</dt>
+          <dd>Persona o grupo que influye en el proyecto, participa en él o se ve afectado por sus resultados.</dd>
+        </div>
+        <div class="term">
+          <dt>IT</dt>
+          <dd><em>Information Technology</em> o tecnologías de la información. En el plan indica una orientación mayor
+            hacia proyectos tecnológicos.</dd>
+        </div>
+        <div class="term">
+          <dt>IA / AI</dt>
+          <dd>Inteligencia artificial / <em>Artificial Intelligence</em>.</dd>
+        </div>
+        <div class="term">
+          <dt>NPV / IRR</dt>
+          <dd><em>Net Present Value</em> y <em>Internal Rate of Return</em>: indicadores para evaluar económicamente
+            inversiones.</dd>
+        </div>
+        <div class="term">
+          <dt>ACP</dt>
+          <dd><em>Autodesk Certified Professional</em>. Certificación profesional de Autodesk; no confundir con PMI-ACP,
+            que es una certificación Agile de PMI.</dd>
+        </div>
+      </dl>
+    </div>
 
-  <section class="route"><div><h3>Ruta recomendada para vos</h3><p>Base PM → Agile → Operations → Finanzas → Leadership → buildingSMART → IA aplicada. PMP queda como evaluación personal para 2029, no como parte de la solicitud actual.</p></div><div><h3>Cómo convertirla en capacitación interna</h3><p>No enseñes “el curso”. Aplicá cada bloque y luego transformalo en un recurso propio: checklist de kickoff, matriz de stakeholders, registro de riesgos, tablero Kanban, retrospectiva, mapa de procesos y guía de IA segura. KICKOFF puede ser el onboarding básico.</p></div></section>
-  <footer>Las puntuaciones representan adecuación estratégica a tu perfil y posibilidad de reutilizar el aprendizaje internamente; no son rankings oficiales. Duraciones y disponibilidad pueden cambiar. Se priorizaron fuentes oficiales y programas con constancia, badge o certificación verificable.</footer>
-</main>
-<script>
-  const buttons=[...document.querySelectorAll('[data-filter]')];
-  const rows=[...document.querySelectorAll('#planTable tbody tr')];
-  buttons.forEach(button=>button.addEventListener('click',()=>{
-    buttons.forEach(b=>b.classList.remove('active')); button.classList.add('active');
-    const filter=button.dataset.filter;
-    rows.forEach(row=>{row.hidden=filter==='recommended'?row.dataset.rec!=='yes':filter==='training'?row.dataset.training!=='high':false});
-  }));
-</script>
+    <section class="route">
+      <div>
+        <h3>Ruta recomendada para vos</h3>
+        <p>Base PM → Agile → Operations → Finanzas → Leadership → buildingSMART → IA aplicada. PMP queda como evaluación
+          personal para 2029, no como parte de la solicitud actual.</p>
+      </div>
+      <div>
+        <h3>Cómo convertirla en capacitación interna</h3>
+        <p>No enseñes "el curso". Aplicá cada bloque y luego transformalo en un recurso propio: checklist de kickoff,
+          matriz de stakeholders, registro de riesgos, tablero Kanban, retrospectiva, mapa de procesos y guía de IA
+          segura. KICKOFF puede ser el onboarding básico.</p>
+      </div>
+    </section>
+    <footer>Las puntuaciones representan adecuación estratégica a tu perfil y posibilidad de reutilizar el aprendizaje
+      internamente; no son rankings oficiales. Duraciones y disponibilidad pueden cambiar. Se priorizaron fuentes
+      oficiales y programas con constancia, badge o certificación verificable.</footer>
+  </main>
+  <script>
+    /* ── Filter buttons ── */
+    const buttons = [...document.querySelectorAll('[data-filter]')];
+    const rows    = [...document.querySelectorAll('#planTable tbody tr')];
+    buttons.forEach(button => button.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+      const filter = button.dataset.filter;
+      rows.forEach(row => {
+        const hide = filter === 'recommended' ? row.dataset.rec !== 'yes'
+                   : filter === 'training'    ? row.dataset.training !== 'high'
+                   : false;
+        if (hide) {
+          row.style.opacity = '0';
+          row.style.transform = 'translateY(10px)';
+          setTimeout(() => { row.hidden = true; }, 220);
+        } else {
+          row.hidden = false;
+          requestAnimationFrame(() => {
+            row.style.transition = 'opacity .32s ease, transform .32s ease';
+            row.style.opacity = '1';
+            row.style.transform = 'translateY(0)';
+          });
+        }
+      });
+    }));
+
+    /* ── Scroll-reveal with IntersectionObserver ── */
+    const revealTargets = [
+      { selector: '.phase',    delay: 80 },
+      { selector: '.month',    delay: 70 },
+      { selector: '.term',     delay: 60 },
+      { selector: '.route>div', delay: 100 },
+      { selector: '.insight',   delay: 0 },
+      { selector: '.timeline-zone h2, .calendar-zone h2, .plan-zone h2, .glossary-zone h2', delay: 0 },
+      { selector: '.table-wrap', delay: 0 },
+    ];
+
+    revealTargets.forEach(({ selector, delay }) => {
+      document.querySelectorAll(selector).forEach((el, i) => {
+        el.classList.add('reveal');
+        el.style.transitionDelay = (i * delay) + 'ms';
+      });
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    /* ── Subtle parallax on header objects (mouse move) ── */
+    const header = document.querySelector('header');
+    const orb    = document.querySelector('.orb');
+    const ring   = document.querySelector('.ring');
+    const pill3d = document.querySelector('.pill3d');
+
+    if (header && orb && ring && pill3d) {
+      header.addEventListener('mousemove', (e) => {
+        const rect = header.getBoundingClientRect();
+        const cx   = rect.width  / 2;
+        const cy   = rect.height / 2;
+        const dx   = (e.clientX - rect.left - cx) / cx;  /* -1 to 1 */
+        const dy   = (e.clientY - rect.top  - cy) / cy;
+
+        orb.style.transform    = `translate(${dx * -14}px, ${dy * -10}px)`;
+        ring.style.transform   = `rotate(${-24 + dx * 5}deg) translate(${dx * -8}px, ${dy * -6}px)`;
+        pill3d.style.transform = `rotate(${-13 + dy * 4}deg) translate(${dx * -6}px, ${dy * -8}px)`;
+      });
+
+      header.addEventListener('mouseleave', () => {
+        orb.style.transition    = 'transform .8s ease';
+        ring.style.transition   = 'transform .8s ease';
+        pill3d.style.transition = 'transform .8s ease';
+        orb.style.transform     = '';
+        ring.style.transform    = '';
+        pill3d.style.transform  = '';
+        setTimeout(() => {
+          orb.style.transition    = '';
+          ring.style.transition   = '';
+          pill3d.style.transition = '';
+        }, 800);
+      });
+
+      header.addEventListener('mouseenter', () => {
+        orb.style.transition    = 'transform .15s ease';
+        ring.style.transition   = 'transform .15s ease';
+        pill3d.style.transition = 'transform .15s ease';
+      });
+    }
+
+    /* ── Section kickers: slide-in on reveal ── */
+    document.querySelectorAll('.section-kicker').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateX(-12px)';
+      el.style.transition = 'opacity .45s ease, transform .45s ease';
+      const obs = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.opacity = '1';
+          el.style.transform = 'translateX(0)';
+          obs.disconnect();
+        }
+      }, { threshold: 0.3 });
+      obs.observe(el);
+    });
+  </script>
 </body>
+
 </html>
